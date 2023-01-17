@@ -1,0 +1,382 @@
+body{
+    font-size: 16px;
+    color: #fff;
+    background-color:#61122f ;
+    font-family: 'Oxygen', sans-serif;
+}
+/*Navbar Style*/
+#header-nav{
+    background-color: #f6b319;
+    border: 0;
+    border-radius: 0;
+}
+#logo-img{
+    background: url('../Images/restaurant-logo_large.png');
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0px;
+}
+.navbar-brand{
+    padding-top:25px;
+}
+.navbar-brand h1{
+    display: inline-block;
+    color: #557c3e;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    top: 200px;
+    line-height: 0.6;
+    font-family: 'Lora', serif;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-barnd p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+.fas{
+    color: #951c49;
+}
+#nav-list a{
+    color: #951c49;
+    text-align: center;
+}
+#nav-list a:hover{
+background-color: #e7e7e7;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+#phone{
+    margin-top: 5px;
+}
+#phone a{
+    text-align: right;
+    padding-bottom: 0px;
+}
+#phone div{
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggler{
+border: 1px solid #61233f;
+align-content: center;
+}
+.navbar-header button.navbar-toggler{
+   clear: both;
+    }
+    /*NAVBAR STYLE END*/
+
+    /*HOMEPAGE STYLE*/
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 20vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3%;
+    border: 2px solid #3f0c1f;
+    text-transform: uppercase;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0px 1px 2px 1px  #ccc;
+}
+#menu-tile{
+    background: url('../Images/menu-tile.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#specials-tile{
+    background: url('../Images/specials-tile.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    opacity: 0.8;
+    background: black;
+    color: #fff;
+    transition: 1s;
+}
+#menu-tile span:hover, #specials-tile span:hover, #map-tile span:hover{
+    height: 70%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+/*Single Category Page*/
+.menu-item-tile{
+  margin-bottom: 3%;
+}
+.menu-item-title,.menu-item-price{
+  font-size: 1.1em;
+  text-align: left;
+
+}
+.menu-item-price span{
+  font-size: 0.6em;
+}
+.menu-item-photo{
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  padding: 0;
+  max-width: 250px;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: -7%;
+}
+.menu-item-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 20px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 5%;
+}
+
+h3.menu-item-title{
+  margin:0 0 3%;
+}
+
+.menu-item-details{
+  overflow: auto;
+  height: 10vw;
+  font-size: .8em;
+  font-style: italic;
+}
+
+/* FOOTER */
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+    color: #fff;
+    font-size: 1em;
+  }
+  .panel-footer span{
+      font-size: 1.5em;
+      margin: 5% 2% 5% 0%;
+  }
+  footer div{
+    color: #fff;
+  }
+  .panel-footer div.row {
+    margin-bottom: 1%;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #reviews {
+    font-style: italic;
+  }
+  #reviews p:nth-child(2) {
+    margin-top: 25px;
+  }
+  hr{
+    display: block;
+    border-width: 1px;
+    height: 2px;
+    width: 50%;
+    border: 1px solid navajowhite;
+  }
+
+  /* ################# MENU CATEGORIES PAGE ##################*/
+.category-title { 
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 80%;
+    height: 11.5vw;
+    margin: 0 auto 15px;
+  }
+  .category-title span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height:30% ;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    padding-top:4%;
+    align-content: center;
+  }
+  .category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+  }
+  
+  #menu-categories-title + div {
+    margin-bottom: 50px;
+  }
+  /* END MENU CATEGORIES PAGE */
+
+/*MEDIA QUERY*/
+/*************LARGE Devices Only***********/
+@media (min-width: 1200px){
+ .container .jumbotron{
+    background: url('../Images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+    background-size: cover;
+    position: relative;
+}
+}
+/*************MEDIUM Devices Only***********/
+@media (max-width:1199px) and (min-width:992px){
+    #logo-img {
+        background: url('/Images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+      }
+      .container .jumbotron{
+        background: url('../Images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        background-size: cover;
+        position: relative;
+    }
+    .category-title{
+      width: 90%;}
+}
+/*************SMALL Devices Only***********/
+@media (max-width:991px) and (min-width: 768px){
+  #logo-img {
+        background: url('/Images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+      }
+
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 5% 10% 5% 10%;
+        padding: 3%;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+        text-align: center;
+      }
+      #call-btn > a:hover{
+          background-color:#e7e7e7;
+          text-decoration: none;
+      }
+
+    .container .jumbotron{
+        background: url('../Images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        background-size: cover;
+        position: relative;
+    }
+ 
+
+}
+/*************EXTRA SMALL Devices Only***********/
+@media (max-width:767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+      }
+      .navbar-brand h1 { /* Restaurant name */
+        padding-top: 10px;
+        font-size: 5vw; /* 1vw = 1% of viewport width */
+      }
+      .navbar-brand p { /* Kosher cert */
+        font-size: .6em;
+        margin-top: 12px;
+      }
+      .navbar-brand p img { /* Star-K */
+        height: 20px;
+      }
+      .navbar-header button.navbar-toggler{
+          margin-top: 3vw;
+          align-content: center;
+      }
+      #collapsable-nav a { /* Collapsed nav menu text */
+        font-size: 1.4em;
+      }
+      #collapsable-nav a span { /* Collapsed nav menu glyph */
+        font-size: 1em;
+        margin-right: 30px;
+        padding: 10px;
+      }
+      #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 5% 10% 5% 10%;
+        padding: 3%;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+        text-align: center;
+      }
+      #call-btn > a:hover{
+          background-color:#e7e7e7;
+          text-decoration: none;
+      }
+    .order-now{
+          text-align: right;
+          color: cornsilk;
+      }
+     .container .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        background-size: cover;
+        position: relative;
+      }
+      .category-title{
+          width: 50%;
+          height: 25vw;
+      }
+      .category-title span {
+        font-size: 0.9em;
+        height: 35%;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .category-title{
+        width: 32vh;}
+
+    .menu-item-photo{
+      margin: auto;
+    }
+  .menu-item-price{
+    text-align: center;
+  }
+  h3.menu-item-title{
+    text-align: center;
+  }
+}
